@@ -1,0 +1,13 @@
+metrics:
+  rancher.managed.cluster:
+    short : metric recording each downstream cluster managed by rancher
+    gauge:
+      value_type: int64
+    attributes:
+      - rancher.cluster.id
+      - rancher.k8s.distribution
+      - k8s.resource.name
+      - k8s.resource.namespace
+      - k8s.resource.gvk
+    optional_attributes:
+      - controller.managedBy

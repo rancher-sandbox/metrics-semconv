@@ -1,0 +1,11 @@
+attributes:
+  rancher.cluster.id:
+    type : string
+    description : The internal id of the cluster in rancher
+  rancher.cluster.name:
+    type : string
+    description : The user friendly name of the cluster in rancher
+  rancher.k8s.distribution:
+    type: string
+    enum : [k3s, rke, rke2]
+    description: The Kubernetes distribution of the cluster.
